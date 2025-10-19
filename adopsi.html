@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Adopsi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            LOGO ANDA
+        </div>
+        <nav>
+            <h3>Filter Utama</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Beranda</a></li>
+                <li><a href="#"><i class="fa-solid fa-flag"></i> Lapor</a></li>
+                <li><a href="adopsi.html" class="active"><i class="fa-solid fa-paw"></i> Adopsi</a></li>
+                <li><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i> Donasi</a></li>
+                <li><a href="#"><i class="fa-solid fa-ranking-star"></i> Peringkat</a></li>
+                <li><a href="#"><i class="fa-solid fa-notes-medical"></i> Rawat Kucing</a></li>
+            </ul>
+
+            <h3>Pengguna</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Profil</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main-content-wrapper" id="mainContent">
+        <header class="header">
+            <div class="left-side">
+                <i class="fa-solid fa-bars" id="burgerMenuBtn"></i>
+                <span class="breadcrumb">ADOPSI / DAFTAR KUCING</span>
+            </div>
+            <div class="right-side">
+                <i class="fa-solid fa-cog"></i>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-user-circle"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-header">
+                <h1>Adopsi</h1>
+            </div>
+
+            <div class="adoption-controls">
+                <div class="control-buttons">
+                    <button class="active" id="filterButton"><i class="fa-solid fa-filter"></i> Filter</button>
+                    <button><i class="fa-solid fa-list"></i> List Adopsi</button>
+                </div>
+                <div class="search-bar">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Pilihan yang sesuai dan diinginkan">
+                </div>
+            </div>
+
+            <div class="filter-panel" id="filterPanel">
+                 <h4>Filter</h4>
+                 <div class="filter-options">
+                    <div class="filter-group"><label><b>Umur Kucing</b></label><label><input type="checkbox"> 1 - 5 bln</label><label><input type="checkbox"> 6 - 11 bln</label></div>
+                    <div class="filter-group"><label style="color:transparent;">_</label><label><input type="checkbox"> 1 - 4 thn</label><label><input type="checkbox"> 5 - 8 thn</label></div>
+                    <div class="filter-group"><label><b>Jenis Kelamin</b></label><label><input type="checkbox"> Betina</label><label><input type="checkbox"> Jantan</label></div>
+                    <div class="filter-group"><label><b>Ras Kucing</b></label><label><input type="checkbox"> Persia</label><label><input type="checkbox"> Anggora</label><label><input type="checkbox"> Domestik</label></div>
+                 </div>
+            </div>
+
+            <div class="cat-adoption-grid">
+                <div class="cat-card">
+                    <img src="https://i.imgur.com/K0k9eDo.png" alt="Kucing Putih Persia">
+                    <div class="cat-card-body">
+                        <h3>Mochi</h3>
+                        <div class="cat-info-tags"><span class="tag">Betina</span><span class="tag">Persia</span><span class="tag">1 thn</span></div>
+                        <div class="shelter-info"><img src="https://i.imgur.com/5D63UyY.jpg" alt="Shelter avatar"><span><b>Rumah Kucing BDG</b> - Bandung</span></div>
+                        <p>Mochi adalah kucing yang tenang dan penyayang, cocok untuk keluarga.</p>
+                        <a href="form-adopsi.html?id=Mochi" class="btn-adopt">Adopsi</a>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="https://i.imgur.com/k2gW25y.jpg" alt="A cute grey cat">
+                    <div class="cat-card-body">
+                        <h3>Leo</h3>
+                        <div class="cat-info-tags"><span class="tag">Jantan</span><span class="tag">British</span><span class="tag">8 bln</span></div>
+                        <div class="shelter-info"><img src="https://i.imgur.com/5D63UyY.jpg" alt="Shelter avatar"><span><b>Meow Shelter</b> - Jakarta</span></div>
+                        <p>Leo sangat aktif dan suka bermain. Mencari rumah yang bisa mengajaknya bermain.</p>
+                        <a href="form-adopsi.html?id=Leo" class="btn-adopt">Adopsi</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

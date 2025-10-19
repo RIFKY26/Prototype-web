@@ -49,30 +49,22 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- LOGIKA FORM MULTI-LANGKAH (LENGKAP) ---
-
-    // 1. Ambil semua elemen yang dibutuhkan
     const tabs = { informasi: document.getElementById('informasi-tab'), verifikasi: document.getElementById('verifikasi-tab'), adopsi: document.getElementById('adopsi-tab') };
     const steps = { informasi: document.getElementById('informasi-step'), verifikasi: document.getElementById('verifikasi-step'), adopsi: document.getElementById('adopsi-step') };
     const submitFormBtn = document.getElementById('submit-form-btn');
     const continueAdoptionBtn = document.getElementById('continue-adoption-btn');
 
-    // 2. Buat fungsi untuk pindah langkah
     function goToStep(stepName) {
-        // Sembunyikan semua langkah dan non-aktifkan semua tab
         Object.values(tabs).forEach(tab => tab.classList.remove('active'));
         Object.values(steps).forEach(step => step.classList.remove('active'));
-        
-        // Tampilkan langkah dan tab yang diinginkan
         tabs[stepName].classList.add('active');
         steps[stepName].classList.add('active');
     }
 
-    // 3. Event listener untuk tombol "Ajukan"
     if (submitFormBtn) {
         submitFormBtn.addEventListener('click', (event) => {
             event.preventDefault();
 
-            // Validasi form
             const pernahRawat = document.querySelector('input[name="pernah-rawat"]:checked');
             const cukupUang = document.querySelector('input[name="cukup-uang"]:checked');
             const adaWaktu = document.querySelector('input[name="ada-waktu"]:checked');
@@ -83,15 +75,12 @@ window.addEventListener('DOMContentLoaded', () => {
                 return;
             }
             
-            // Jika valid, pindah ke langkah verifikasi
             goToStep('verifikasi');
         });
     }
     
-    // 4. INI BAGIAN PENTINGNYA: Event listener untuk tombol "Lanjutkan Adopsi"
     if(continueAdoptionBtn) {
         continueAdoptionBtn.addEventListener('click', () => {
-             // Pindah ke langkah adopsi sukses
              goToStep('adopsi'); 
         });
     }

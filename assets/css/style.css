@@ -374,3 +374,172 @@ textarea { width: 100%; min-height: 80px; padding: 10px; border-radius: 8px; bor
 #adopsi-step h4, #adopsi-step p {
     text-align: center;
 }
+
+
+/* =================================== */
+/* == STYLE KHUSUS HALAMAN DONASI   == */
+/* =================================== */
+
+.donation-search-bar {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.donation-search-bar input {
+    width: 100%;
+    padding: 12px 20px 12px 45px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.donation-search-bar i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+.donation-grid {
+    display: flex;
+    flex-direction: column; /* Ini kuncinya: menyusun item secara vertikal */
+    gap: 30px; /* Tetap pertahankan jarak antar kartu */
+}
+
+.donation-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.donation-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Penting agar .donation-progress dan tombol bisa di bawah */
+}
+
+.donation-card-body h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.donation-card-body p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-top: 10px;
+    flex-grow: 1; /* Mendorong konten di bawahnya ke paling bawah */
+}
+
+.donation-progress {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.progress-text {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.progress-text strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+.btn-donate {
+    background-color: var(--yellow-color);
+    color: var(--text-dark);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.btn-donate:hover {
+    opacity: 0.9;
+}
+
+/* ============================================== */
+/* == STYLE BARU UNTUK BANNER SHELTER DI KARTU == */
+/* ============================================== */
+
+.donation-card-body {
+    /* Jadikan body kartu sebagai 'jangkar' untuk elemen di dalamnya */
+    position: relative; 
+    /* Beri ruang di atas untuk banner shelter yang tumpang tindih */
+    padding-top: 60px; 
+}
+
+.donation-card-body h3 {
+    text-align: center; /* Judul sekarang di tengah */
+    margin-bottom: 45px; /* Beri jarak lebih besar untuk banner */
+}
+
+/* Ini adalah wadah utama untuk banner shelter */
+.shelter-info-banner {
+    position: absolute; /* Posisikan elemen ini 'melayang' di atas body kartu */
+    top: 45px; /* Jarak dari atas body kartu */
+    left: 50%; /* Posisikan 50% dari kiri */
+    transform: translateX(-50%); /* Geser ke kiri 50% dari lebarnya sendiri untuk membuatnya pas di tengah */
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gambar latar belakang oval */
+.shelter-info-banner .bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan gambar mengisi area tanpa distorsi */
+    border-radius: 50px; /* Membuat bentuk oval/pil */
+    z-index: 1; /* Letakkan di lapisan paling bawah */
+    filter: brightness(0.9); /* Sedikit gelapkan gambar agar teks lebih terbaca */
+}
+
+/* Teks yang ada di atas gambar */
+.shelter-info-banner .text-content {
+    position: relative;
+    z-index: 2; /* Letakkan di lapisan atas gambar */
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Bayangan teks agar lebih mudah dibaca */
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Donasi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">LOGO ANDA</div>
+        <nav>
+            <h3>Filter Utama</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Beranda</a></li>
+                <li><a href="#"><i class="fa-solid fa-flag"></i> Lapor</a></li>
+                <li><a href="adopsi.html"><i class="fa-solid fa-paw"></i> Adopsi</a></li>
+                <li><a href="donasi.html" class="active"><i class="fa-solid fa-hand-holding-dollar"></i> Donasi</a></li>
+                </ul>
+             <h3>Pengguna</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Profil</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main-content-wrapper" id="mainContent">
+        <header class="header">
+            <div class="left-side"><i class="fa-solid fa-bars" id="burgerMenuBtn"></i></div>
+            <div class="right-side"><i class="fa-solid fa-cog"></i><i class="fa-solid fa-bell"></i><i class="fa-solid fa-user-circle"></i></div>
+        </header>
+
+        <main>
+            <div class="main-header">
+                <h1>Donasi</h1>
+                <span class="breadcrumb">DONASI / DETAIL DONASI</span>
+            </div>
+
+            <div class="donation-detail-wrapper">
+                <div class="donation-detail-card">
+                    <img id="campaign-image" src="" alt="Gambar kampanye donasi">
+                    <div class="donation-detail-body">
+                        <h2 id="campaign-title"></h2>
+                        <div id="campaign-shelter" class="shelter-info"></div>
+                        <p id="campaign-description"></p>
+                        <div class="donation-progress">
+                            <div id="campaign-progress-text" class="progress-text"></div>
+                            <div class="progress-bar">
+                                <div id="campaign-progress-bar" class="progress-bar-fill"></div>
+                            </div>
+                        </div>
+                        <a href="pembayaran-donasi.html" class="btn-donate">Berdonasi</a>
+                    </div>
+                </div>
+
+                <div class="donor-list">
+                    <h3>Informasi Donatur Dana</h3>
+                    <div id="donor-list-container">
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/donasi-detail.js"></script>
+</body>
+</html>

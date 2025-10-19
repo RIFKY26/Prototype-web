@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran Donasi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">LOGO ANDA</div>
+        <nav>
+            <h3>Filter Utama</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Beranda</a></li>
+                <li><a href="#"><i class="fa-solid fa-flag"></i> Lapor</a></li>
+                <li><a href="adopsi.html"><i class="fa-solid fa-paw"></i> Adopsi</a></li>
+                <li><a href="donasi.html" class="active"><i class="fa-solid fa-hand-holding-dollar"></i> Donasi</a></li>
+                <li><a href="#"><i class="fa-solid fa-ranking-star"></i> Peringkat</a></li>
+                <li><a href="#"><i class="fa-solid fa-notes-medical"></i> Rawat Kucing</a></li>
+            </ul>
+            <h3>Pengguna</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Profil</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main-content-wrapper" id="mainContent">
+        <header class="header">
+            <div class="left-side"><i class="fa-solid fa-bars" id="burgerMenuBtn"></i></div>
+            <div class="right-side"><i class="fa-solid fa-cog"></i><i class="fa-solid fa-bell"></i><i class="fa-solid fa-user-circle"></i></div>
+        </header>
+
+        <main>
+            <div class="main-header">
+                <h1>Pembayaran Donasi</h1>
+                <span class="breadcrumb">DONASI / PEMBAYARAN</span>
+            </div>
+
+            <div class="payment-form">
+                <div class="payment-section">
+                    <h4>Lengkapi Data di Bawah</h4>
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nama Donatur (Bisa Anonim)">
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" placeholder="Nomor Handphone atau Email">
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h4>Masukkan Nominal Donasi</h4>
+                    <div class="input-group">
+                        <span class="input-prefix">RP</span>
+                        <input type="number" placeholder="Jumlah Nominal">
+                    </div>
+                    <button class="btn-payment">Lanjutkan Pembayaran</button>
+                </div>
+
+                <div class="payment-section">
+                    <h4>Metode Pembayaran</h4>
+                    <div class="payment-method-option">
+                        <img src="assets/image/donasi/image 9.png" alt="Logo QRIS">
+                        <span>QRIS</span>
+                    </div>
+                    <button class="btn-payment">Bayar Donasi</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/pembayaran.js"></script>
+</body>
+</html>

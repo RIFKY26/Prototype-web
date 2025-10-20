@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peringkat Pengguna</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">LOGO ANDA</div>
+        <nav>
+            <h3>Filter Utama</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Beranda</a></li>
+                <li><a href="#"><i class="fa-solid fa-flag"></i> Lapor</a></li>
+                <li><a href="adopsi.html"><i class="fa-solid fa-paw"></i> Adopsi</a></li>
+                <li><a href="donasi.html"><i class="fa-solid fa-hand-holding-dollar"></i> Donasi</a></li>
+                <li><a href="peringkat.html" class="active"><i class="fa-solid fa-ranking-star"></i> Peringkat</a></li>
+                <li><a href="#"><i class="fa-solid fa-notes-medical"></i> Rawat Kucing</a></li>
+            </ul>
+            <h3>Pengguna</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Profil</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Keluar</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main-content-wrapper" id="mainContent">
+        <header class="header">
+            <div class="left-side"><i class="fa-solid fa-bars" id="burgerMenuBtn"></i></div>
+            <div class="right-side"><i class="fa-solid fa-cog"></i><i class="fa-solid fa-bell"></i><i class="fa-solid fa-user-circle"></i></div>
+        </header>
+
+        <main>
+            <div class="main-header">
+                <h1>Peringkat</h1>
+                <span class="breadcrumb">PERINGKAT / PENGGUNA</span>
+            </div>
+
+            <div class="leaderboard-top3">
+                <div class="top-user-card">
+                    <div class="rank-badge silver">2</div>
+                    <img src="https://i.imgur.com/user-placeholder.png" alt="Foto Pengguna">
+                    <div class="stars">★★★★☆</div>
+                    <h3>John Doe</h3>
+                    <p>Total Points</p>
+                    <div class="total-points">976</div>
+                    <div class="point-details">
+                        <span>Poin Adopsi <span class="points">657</span></span>
+                        <span>Poin Lapor <span class="points">686</span></span>
+                        <span>Poin Donasi <span class="points">756</span></span>
+                    </div>
+                </div>
+                <div class="top-user-card main">
+                    <div class="rank-badge gold">1</div>
+                    <img src="https://i.imgur.com/user-placeholder.png" alt="Foto Pengguna">
+                    <div class="stars">★★★★★</div>
+                    <h3>Shaq O'niel</h3>
+                    <p>Total Points</p>
+                    <div class="total-points">1257</div>
+                    <div class="point-details">
+                        <span>Poin Adopsi <span class="points">832</span></span>
+                        <span>Poin Lapor <span class="points">226</span></span>
+                        <span>Poin Donasi <span class="points">199</span></span>
+                    </div>
+                </div>
+                <div class="top-user-card">
+                     <div class="rank-badge bronze">3</div>
+                    <img src="https://i.imgur.com/user-placeholder.png" alt="Foto Pengguna">
+                    <div class="stars">★★★★☆</div>
+                    <h3> Rex Orange </h3>
+                    <p>Total Points</p>
+                    <div class="total-points">865</div>
+                    <div class="point-details">
+                        <span>Poin Adopsi <span class="points">787</span></span>
+                        <span>Poin Lapor <span class="points">687</span></span>
+                        <span>Poin Donasi <span class="points">976</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaderboard-table-wrapper">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Nama</th>
+                            <th>Poin Adopsi</th>
+                            <th>Poin Lapor</th>
+                            <th>Poin Donasi</th>
+                            <th>Total Poin</th>
+                            <th>Tindakan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="https://i.imgur.com/user-placeholder.png" alt="Avatar"> Salint Johan</td>
+                            <td>257</td>
+                            <td>656</td>
+                            <td>668</td>
+                            <td class="total"><strong>786</strong></td>
+                            <td><i class="fa-solid fa-ellipsis tindakan-btn" data-userid="salintjohan" data-username="Salint Johan"></i></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="https://i.imgur.com/user-placeholder.png" alt="Avatar"> John Doe</td>
+                            <td>657</td>
+                            <td>686</td>
+                            <td>756</td>
+                            <td class="total"><strong>976</strong></td>
+                            <td><i class="fa-solid fa-ellipsis tindakan-btn" data-userid="johndoe" data-username="John Doe"></i></td>
+                        </tr>
+                         <tr>
+                            <td>3</td>
+                            <td><img src="https://i.imgur.com/user-placeholder.png" alt="Avatar"> Rex Orange</td>
+                            <td>787</td>
+                            <td>687</td>
+                            <td>865</td>
+                            <td class="total"><strong>976</strong></td>
+                            <td><i class="fa-solid fa-ellipsis tindakan-btn" data-userid="Rex Orange" data-username="Rex Orange"></i></td>
+                        </tr>
+                         <tr>
+                            <td>4</td>
+                            <td><img src="https://i.imgur.com/user-placeholder.png" alt="Avatar">  Laufey</td>
+                            <td>767</td>
+                            <td>758</td>
+                            <td>767</td>
+                            <td class="total"><strong>869</strong></td>
+                            <td><i class="fa-solid fa-ellipsis tindakan-btn" data-userid="Laufey" data-username=" Maulida"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/peringkat.js"></script>
+    <div id="detailModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Riwayat Poin Pengguna</h3>
+                <button id="modalCloseBtn" class="modal-close">&times;</button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
+</body>
+</html>
